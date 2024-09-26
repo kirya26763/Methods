@@ -19,7 +19,7 @@ public class Main {
         }
     }
 
-    public static int calculatedDeliveryDistance(int deliveryDistance) {
+    public static int checkDeliveryDistance(int deliveryDistance) {
         int day = 0;
         if (deliveryDistance > 100) {
             day = 0;
@@ -46,11 +46,11 @@ public class Main {
         //Задача 3
         System.out.println("Задача 3");
         int deliveryDistance = 60;
-        int i = calculatedDeliveryDistance(deliveryDistance);
-        if (i == 0) {
+        int days = checkDeliveryDistance(deliveryDistance);
+        if (days == 0) {
             System.out.println("Доставки нет.");
         } else {
-            System.out.println("Потребуется дней: " + i);
+            System.out.println("Потребуется дней: " + days);
         }
     }
 }
