@@ -6,6 +6,7 @@ public class Main {
             System.out.println(year + " год — невисокосный год");
         }
     }
+
     public static void checkDevice(int clientOS, int clientDeviceYear) {
         if (clientOS == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
@@ -17,6 +18,7 @@ public class Main {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
     }
+
     public static int calculatedDeliveryDistance(int deliveryDistance) {
         int day = 0;
         if (deliveryDistance > 100) {
@@ -30,6 +32,7 @@ public class Main {
         }
         return day;
     }
+
     public static void main(String[] args) {
         //Задача 1
         System.out.println("Задача 1");
